@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="search">
+  <Search />
+</view>
+<!-- 轮播图 -->
+<view class="swipe">
+  <swiper
+  indicator-dots="true"
+  autoplay="true"
+  interval="2000"
+  circular="true"
+  >
+    <swiper-item wx:for="{{swipe}}" wx:key="index">
+      <image src="{{item.src}}"></image>
+    </swiper-item>
+</swiper>
+</view>
+<!-- 内容 -->
+<view>
+  <block wx:for="{{contents}}" wx:key="index">
+    <navigator hover-class="navigator-hover" url="../details/details?id={{item.id}}">
+      <view class="info"  data-value="{{item.id}}">
+        <view class="content">
+          <image src="{{item.img_src}}"></image>
+          <text class="text">
+            {{item.text}}
+          </text>
+          <view class="price">{{item.price}}</view>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>

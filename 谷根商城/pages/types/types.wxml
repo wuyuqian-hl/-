@@ -1,0 +1,21 @@
+<!--pages/types/types.wxml-->
+<view class="types">
+  <!-- 左侧导航 -->
+  <scroll-view class="left">
+    <block wx:for="{{arrs}}" wx:key="index">
+      <view id="{{index === count? 'active' : ''}}" bindtap="click" data-index="{{index}}">{{item.name}}</view>
+    </block>
+  </scroll-view>
+  <!-- 右侧导航 -->
+  <scroll-view class="right">
+    <view class="look">查看 {{title}} 下的所有产品></view>
+    <view class="content">
+      <block wx:for="{{children}}" wx:key="index">
+        <view class="shopinfo">
+          <image src="{{item.imgsrc}}"></image>
+          <view class="title">{{item.title}}</view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

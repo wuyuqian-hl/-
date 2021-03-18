@@ -1,0 +1,30 @@
+/* pages/mySet/mySet.wxss */
+.smile{
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  padding-top: 80px;
+}
+.smile image{
+  width: 100px;
+  height: 100px;
+}
+.info{
+  width: 90%;
+  margin-left: 20px;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+}
+.info view{
+  padding-bottom: 15px;
+}
+.info .get{
+  color: #ccc;
+}
+.button{
+  margin-top: 10px;
+  border-radius: 32px;
+}
+.nicheng{
+  text-align: center;
+}

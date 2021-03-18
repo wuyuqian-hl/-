@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mySet/mySet",
+    "pages/types/types",
+    "pages/details/details"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d81e06",
+    "navigationBarTitleText": "谷根商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "icon/shouye.png",
+        "selectedIconPath": "icon/avtive-shouye.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/types/types",
+        "iconPath": "icon/feilei.png",
+        "selectedIconPath": "icon/avtive-fenlei.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mySet/mySet",
+        "iconPath": "icon/wode.png",
+        "selectedIconPath": "icon/avtive-wode.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

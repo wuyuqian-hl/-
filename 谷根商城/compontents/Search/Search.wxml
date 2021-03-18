@@ -1,0 +1,4 @@
+<!--compontents/Search/Search.wxml-->
+<view class="search">
+  <input type="text" placeholder="请输入搜索内容" placeholder-class="inpst" />
+</view>

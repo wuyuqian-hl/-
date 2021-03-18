@@ -1,0 +1,21 @@
+<!--pages/mySet/mySet.wxml-->
+<view wx:if="{{success}}">
+  <view>
+    <view class="smile">
+      <image src="{{srcUrl}}"></image>
+    </view>
+    <view class="info">
+      <view>申请获取以下权限</view>
+      <view class="get">获得你的公开信息(昵称，头像)等</view>
+    </view>
+    <button class="button" type="primary" open-type="getUserInfo"  bindgetuserinfo="getuserinfo">授权登录</button>
+  </view>
+</view>
+<view wx:if="{{!success}}">
+  <view>
+    <view class="smile">
+      <image src="{{srcUrl}}"></image>
+    </view>
+      <view class="nicheng">昵称：{{userInfo.nickName}}</view>
+  </view>
+</view>

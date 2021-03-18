@@ -1,0 +1,38 @@
+/**index.wxss**/
+.search{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.swipe{
+  padding-top: 90rpx;
+  width: 100%;
+}
+.swipe swiper{
+  width: 100%;
+}
+.swipe swiper image{
+  width: 100%;
+}
+.info{
+float: left;
+width: 48%;
+ border: 1px solid #ccc;
+ padding-left: 10rpx;
+}
+.content{
+  width: 100%;
+  /* flex: 50%;
+  flex-wrap: nowrap; */
+}
+.content>text{
+  font-size: 13px;
+}
+.content>image{
+  width: 100%;
+}
+.price{
+  
+  color: #d81e06;
+  font-size: 14px;
+}
